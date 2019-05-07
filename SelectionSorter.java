@@ -14,6 +14,7 @@ public class SelectionSorter extends Sorter {
     }
 
 
+	// from hw62 solutions
     private int dweebIndex( int startAt) {
         // use the starting element as a first guess
         int dweebAt = startAt;
