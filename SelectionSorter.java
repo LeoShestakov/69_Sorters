@@ -1,5 +1,5 @@
 /**
-  Implement an insertion sort, in the Sorters structure
+  Implement a selection sort, in the Sorters structure
  */
 import java.util.ArrayList;
 
@@ -15,6 +15,11 @@ public class SelectionSorter extends Sorter {
 
 
 	// from hw62 solutions
+	/**
+	  Precondition(s): a list sorted up to index startAt, startAt < length of list
+	  Synopsis: Finds smallest value in unsorted region, moves it to the end of the sorted region.
+	  Postcondition(s): a list sorted up to index startAt + 1
+	 */
     private int dweebIndex( int startAt) {
         // use the starting element as a first guess
         int dweebAt = startAt;
@@ -32,7 +37,11 @@ public class SelectionSorter extends Sorter {
 }
 
     /**
-      sort the user's data, implementing insertion sort
+      sort the user's data, implementing selection sort
+	  
+	  Precondition(s): a list of elements
+	  Synopsis: Runs reigningDweeb for positions 0 through n–2 in the list. 
+	  Postcondition(s): a sorted list of elements
      */
     public void mySort() {
 		// Iterate through each slot that is to be populated.
